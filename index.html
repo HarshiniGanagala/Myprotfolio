@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshini Gangala | Portfolio</title>
+    <meta name="description" content="Personal portfolio of Harshini Gangala, a Computer Science student and aspiring software developer.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">Harshini Gangala</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#experience">Experience & Education</a></li>
+                <li><a href="#resume">Resume</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Hi, I'm Harshini</h1>
+                <p class="hero-description">I am a Computer Science Student passionate about building innovative projects and learning new technologies. I love solving problems and turning ideas into reality.</p>
+                
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Work</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <img src="assets/profile.jpg" alt="Harshini's photo" class="hero-image" onerror="this.src='https://ui-avatars.com/api/?name=Harshini&size=400&background=e0e7ff&color=4f46e5'">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-flex-container">
+                    <div class="about-image-wrapper">
+                        <img src="assets/image-1.png" alt="Harshini photo" class="about-image">
+                    </div>
+                    <div class="about-text-container">
+                        <p class="about-text">
+                            I am a dedicated and enthusiastic Computer Science student with a strong passion for technology, problem-solving, and software development. Over the years, I have gained hands-on experience in programming languages like Python and Java (Basics), and have worked on projects involving web development, AI, and automation. I enjoy exploring emerging technologies, learning new frameworks, and applying my knowledge to create innovative solutions that make a real impact. Beyond coding, I am a curious learner who thrives on challenges, collaborates effectively in teams, and continuously seeks opportunities to grow both technically and professionally. My goal is to contribute to meaningful projects while honing my skills and embracing the ever-evolving world of technology.
+                        </p>
+                    
+                    <div class="about-cards">
+                        <div class="about-card">
+                            <h4>Location</h4>
+                            <p>Nellore, Andhra Pradesh</p>
+                        </div>
+                        <a href="https://github.com/HarshiniGanagala" target="_blank" class="about-card link-card">
+                            <h4>GitHub</h4>
+                            <p>github Profile</p>
+                        </a>
+                        <a href="https://www.linkedin.com/in/gangala-harshini-a25448275" target="_blank" class="about-card link-card">
+                            <h4>LinkedIn</h4>
+                            <p>linkedin Profile</p>
+                        </a>
+                        <a href="https://leetcode.com/u/GHarshini/" target="_blank" class="about-card link-card">
+                            <h4>LeetCode</h4>
+                            <p>leetcode Profile</p>
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">YouTube Title & Description Generator</h3>
+                        <p class="project-desc">Built a web application using Streamlit and Google Gemini API to generate engaging, SEO-friendly YouTube titles and descriptions. Designed a user-friendly interface with real-time suggestions, prompt optimization, and customization to improve content creators’ productivity.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Streamlit</span>
+                            <span>Gemini API</span>
+                        </div>
+                        <a href="https://gen-ai-app-harshini-gangala.streamlit.app/" target="_blank" class="project-link">View Project</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Smart Financial Bot</h3>
+                        <p class="project-desc">Built a Flask-based WhatsApp bot using Twilio APIs to provide live stock data and scraped financial news. Delivered automated trading insights to users in real-time through WhatsApp.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>Twilio</span>
+                        </div>
+                        <a href="https://github.com/HarshiniGanagala" target="_blank" class="project-link">View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Attendance Monitoring System using Deep Learning</h3>
+                        <p class="project-desc">Built a real-time multi-scale face detection pipeline that scans faces at varying distances. Implemented automatic attendance marking using multi-frame confirmation for improved accuracy.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Deep Learning</span>
+                            <span>OpenCV</span>
+                        </div>
+                        <a href="https://github.com/HarshiniGanagala" target="_blank" class="project-link">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <p>Java (Basics) • Python<br>HTML • CSS • JavaScript</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Databases</h3>
+                    <p>SQL</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools</h3>
+                    <p>Git • GitHub</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Core</h3>
+                    <p>Object Oriented Programming<br>Data Structures & Algorithms<br>Operating Systems • DBMS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <h3>IBM GenAI</h3>
+                    <p>IBM Career Education Program<br>May 2025 - Jun 2025</p>
+                    <a href="https://drive.google.com/file/d/1Kq5C8j-Z9gYudIUXJCVfmywnp8Q0eYTn/view?usp=drivesdk" target="_blank" class="view-link">View Certificate</a>
+                </div>
+                <div class="cert-card">
+                    <h3>AWS Academy Cloud Foundations</h3>
+                    <p>AWS<br>Completed</p>
+                    <a href="https://drive.google.com/file/d/1apYBWOFpixfGwV2kXaO-kYKcobX4Nm4J/view?usp=drivesdk" target="_blank" class="view-link">View Certificate</a>
+                </div>
+                <div class="cert-card">
+                    <h3>HTML Hackathon</h3>
+                    <p>Web Development Hackathon<br>Completed</p>
+                    <a href="https://drive.google.com/file/d/1-ZN_XhceX30vPoFFpHfI35UNtixSAQ7Q/view?usp=drivesdk" target="_blank" class="view-link">View Certificate</a>
+                </div>
+                <div class="cert-card">
+                    <h3>MERN Full Stack</h3>
+                    <p>ETHNUS<br>Jun 2024 - Jul 2024</p>
+                    <a href="https://drive.google.com/file/d/1ueT7BteinmhnM73FFSke_kZvsvL0qnuj/view?usp=drivesdk" target="_blank" class="view-link">View Certificate</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-title">
+                        Tech Lead Intern — Viswam AI (Swecha & IIITH)
+                        <span>May 2025 — July 2025</span>
+                    </div>
+                    <div class="timeline-desc">
+                        Hyderabad, Telangana. Developed a Telecom Recommendation System using Python and Machine Learning to recommend suitable plans based on user behavior. Collaborated with a technical team, resolving challenges and contributing to impactful AI-driven solutions.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-title">
+                        B.Tech in Computer Science and Engineering — Vellore Institute of Technology (VIT AP)
+                        <span>Sept 2022 — Present • CGPA: 8.27</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-title">
+                        Senior Secondary (State Board) — Narayana Junior College, Nellore, AP
+                        <span>2020 — 2022 • 92.6%</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-title">
+                        Secondary School of Education (X) — ST. Arnold's High School, Medarametla, AP
+                        <span>2019 — 2020 • 94.0%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="section">
+        <div class="container resume-container">
+            <h2 class="section-title">My Resume</h2>
+            <p class="resume-text" style="margin-bottom: 2rem; color: var(--text-muted);">View my complete resume below or download a copy.</p>
+            <div class="resume-embed">
+                <iframe src="assets/Harshini_Resume.pdf" title="Harshini Resume">
+                    <p>Your browser doesn't support PDF viewing. <a href="assets/Harshini_Resume.pdf">Download PDF</a></p>
+                </iframe>
+            </div>
+            <a href="assets/Harshini_Resume.pdf" download="Harshini_Resume.pdf" class="btn btn-primary btn-large" style="margin-top: 1rem;">Download Resume</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-container">
+                <form class="contact-form" onsubmit="event.preventDefault(); alert('Message Sent!');">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Harshini Gangala</h3>
+                    <p>Computer Science Student & Aspiring Software Developer</p>
+                    <p class="location">Nellore, Andhra Pradesh</p>
+                    <p>Phone: +91 9390458727</p>
+                    <p>Email: harshinigangala03@gmail.com</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Connect</h4>
+                    <a href="https://github.com/HarshiniGanagala" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/gangala-harshini-a25448275" target="_blank">LinkedIn</a>
+                    <a href="https://leetcode.com/u/GHarshini/" target="_blank">LeetCode</a>
+                    <a href="https://www.codechef.com/users/harshini0909" target="_blank">CodeChef</a>
+                </div>
+                <div class="footer-actions">
+                    <a href="assets/Harshini_Resume.pdf" download="Harshini_Documents.zip" id="downloadAllBtn" class="btn btn-outline footer-btn">Download All Documents</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Harshini Gangala. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
