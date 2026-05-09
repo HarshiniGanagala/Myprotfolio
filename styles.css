@@ -285,6 +285,8 @@ img {
     font-size: 1.1rem;
     color: var(--text-muted);
     margin-bottom: 1.5rem;
+    text-align: justify;
+    line-height: 1.8;
 }
 
 .about-cards {
@@ -623,15 +625,6 @@ img {
         right: auto;
         top: 15px;
     }
-
-    .about-flex-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .about-text-container {
-        text-align: center;
-    }
 }
 
 @media (max-width: 768px) {
@@ -667,6 +660,14 @@ img {
     
     .hamburger.active span:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .about-flex-container {
+        flex-direction: column;
+    }
+
+    .about-text-container {
+        text-align: left;
     }
 
     .section {
