@@ -8,3 +8,6 @@ Place your `profile.jpg` and `Harshini_Resume.pdf` in this folder so that the we
 ![profile2.jpg](image-1.png)
 ![profile3.jpg](image-2.png)
 ![profile4.jpg](image-3.png)
+![Youtube.jpg](image-4.png)
+![attendance.jpg](image-5.png)
+![smartai.jpg](image-6.png)
