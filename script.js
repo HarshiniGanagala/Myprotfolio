@@ -134,6 +134,23 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // ==========================================
+    // Heading highlight toggle
+    // ==========================================
+    const headingToggleBtn = document.getElementById('heading-toggle');
+    try {
+        const saved = localStorage.getItem('showHeadings') === 'true';
+        if (saved) document.body.classList.add('show-headings');
+    } catch (e) {}
+
+    if (headingToggleBtn) {
+        headingToggleBtn.addEventListener('click', () => {
+            const enabled = document.body.classList.toggle('show-headings');
+            try { localStorage.setItem('showHeadings', enabled); } catch (e) {}
+            showToast(enabled ? 'Headings highlighted' : 'Headings cleared');
+        });
+    }
+
+    // ==========================================
     // Contact Form Submission
     // ==========================================
     const contactForm = document.getElementById('contact-form');
