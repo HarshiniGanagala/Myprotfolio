@@ -155,7 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ==========================================
     const contactForm = document.getElementById('contact-form');
     if (contactForm) {
-        const formEndpoint = 'https://formspree.io/f/yourFormId'; // Replace with your Formspree form endpoint
+        const formEndpoint = 'https://formspree.io/f/mlgvldzp'; // Formspree form endpoint (updated)
         contactForm.addEventListener('submit', async (event) => {
             event.preventDefault();
             const submitButton = contactForm.querySelector('button[type="submit"]');
