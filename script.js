@@ -134,6 +134,43 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // ==========================================
+    // Contact Form Submission
+    // ==========================================
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+        const formEndpoint = 'https://formspree.io/f/yourFormId'; // Replace with your Formspree form endpoint
+        contactForm.addEventListener('submit', async (event) => {
+            event.preventDefault();
+            const submitButton = contactForm.querySelector('button[type="submit"]');
+            if (submitButton) submitButton.disabled = true;
+
+            const formData = new FormData(contactForm);
+            try {
+                const response = await fetch(formEndpoint, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        Accept: 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    showToast('Message sent! You will receive it by email.');
+                    contactForm.reset();
+                } else {
+                    const result = await response.json();
+                    throw new Error(result.error || 'Submission failed');
+                }
+            } catch (error) {
+                console.error('Contact form error:', error);
+                showToast('Unable to send the message. Please try again later.');
+            } finally {
+                if (submitButton) submitButton.disabled = false;
+            }
+        });
+    }
+
+    // ==========================================
     // Copy to Clipboard (Recruiter Tool)
     // ==========================================
     const copyButtons = document.querySelectorAll('.copy-btn');
